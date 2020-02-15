@@ -24,6 +24,7 @@ public class Main {
 		Sorting IS = new InsertionSorting();
 		Sorting MS = new MergeSorting();
 		Sorting RS = new RadixSorting();
+		Sorting QS = new QuickSorting();
 		Random RM = new Random();
 
 		//Estimate the amount of total numbers
@@ -51,7 +52,7 @@ public class Main {
         }
 		//Execute the sorting method
 		//Change the prefix (SS, IS, etc) in order to execute the sort you deserve
-		ordered = MS.sorting(data, amount);
+		ordered = QS.sorting(data, amount);
 		
 
 		//Get and save the numbers (sorted)
