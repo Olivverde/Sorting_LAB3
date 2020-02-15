@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * Class purpose: Implement the insertion sorting method.
  * 
  * Retrieved from: @Bailey, D. (2007). @JavaDataStructureinJava
- * @author lauraTamath
+ * @lauraTamath
  */
 
 public class InsertionSorting implements Sorting {

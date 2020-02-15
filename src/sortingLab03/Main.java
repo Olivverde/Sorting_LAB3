@@ -51,7 +51,7 @@ public class Main {
         }
 		//Execute the sorting method
 		//Change the prefix (SS, IS, etc) in order to execute the sort you deserve
-		ordered = RS.sorting(data, amount);
+		ordered = MS.sorting(data, amount);
 		
 
 		//Get and save the numbers (sorted)

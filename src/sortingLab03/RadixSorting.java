@@ -13,7 +13,7 @@ import java.util.Vector;
  * 
  * Facility: UVG
  * Class: Algoritmos y estructura de datos
- * Class purpose: Implement the merge sorting method.
+ * Class purpose: Implement the Radix sorting method.
  * 
  * Retrieved from: @Bailey, D. (2007). @JavaDataStructureinJava
  */
