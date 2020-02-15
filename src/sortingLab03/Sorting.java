@@ -9,7 +9,7 @@ public interface Sorting {
 	 * 
 	 * @param data
 	 * @param amount
-	 * @return
+	 * @return 
 	 */
 	public ArrayList<Comparable> sorting (ArrayList<Comparable> data, int amount);
 }
