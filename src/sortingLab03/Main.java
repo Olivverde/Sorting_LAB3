@@ -22,6 +22,7 @@ public class Main {
 		
 		//Class's Ambassador
 		Sorting SS = new SelectionSorting();
+		Sorting IS = new InsertionSorting();
 		Random RM = new Random();
 
 		//Stimate the amount of total numbers
@@ -47,7 +48,9 @@ public class Main {
 		}catch(IOException e) {
             System.out.println("The file has not been found");
         }
-	ordered = SS.sorting(data, amount);
+		//Execute the sorting method
+		//Change the prefix (SS, IS, etc) in order to execute the sort you deserve
+		ordered = IS.sorting(data, amount);
 
 		//Get and save the numbers (sorted)
         try{
