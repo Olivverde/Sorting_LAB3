@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * 
  * Facility: UVG
  * Class: Algoritmos y estructura de datos
- * Class purpose: Implement the selection sorting method.
+ * Class purpose: Implement the insertion sorting method.
  * 
  * Retrieved from: @Bailey, D. (2007). @JavaDataStructureinJava
  * @author lauraTamath
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class InsertionSorting implements Sorting {
 	/**
-	 * Insertion Sorting: Sort comparable objects, It checks if the currently
+	 * Insertion Sorting: Sorts comparable objects, It checks if the currently
 	 * digit has a lower value than the last one. It move the lower values to 
 	 * the beginning of the array.
 	 * @param data

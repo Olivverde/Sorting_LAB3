@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class SelectionSorting implements Sorting
 {
 	/**
-	 * Selection Sorting: Sort comparable objects, taking 2 by 2 in order
+	 * Selection Sorting: Sorts comparable objects, taking 2 by 2 in order
 	 * to determinate which is bigger, implementing the swap function to 
 	 * reorganize according to the generated order.
 	 * @param data

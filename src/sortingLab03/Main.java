@@ -13,7 +13,6 @@ package sortingLab03;
 
 //Imports
 import java.util.Random;
-import java.util.*; 
 import java.io.*;
 import java.util.ArrayList;
 
@@ -23,9 +22,11 @@ public class Main {
 		//Class's Ambassador
 		Sorting SS = new SelectionSorting();
 		Sorting IS = new InsertionSorting();
+		Sorting MS = new MergeSorting();
+		Sorting RS = new RadixSorting();
 		Random RM = new Random();
 
-		//Stimate the amount of total numbers
+		//Estimate the amount of total numbers
 		int amount = RM.nextInt(3000)+10;
 		
 		//Create the arrays that are going to hold the unsorted digits
@@ -50,7 +51,8 @@ public class Main {
         }
 		//Execute the sorting method
 		//Change the prefix (SS, IS, etc) in order to execute the sort you deserve
-		ordered = IS.sorting(data, amount);
+		ordered = RS.sorting(data, amount);
+		
 
 		//Get and save the numbers (sorted)
         try{
@@ -59,7 +61,7 @@ public class Main {
         	PW.close();
         	
         	//Extract the digits from the sorted array
-        	for(int i=0; i<ordered.size(); i++)
+        	for(int i=0; i < ordered.size(); i++)
         	{
         		int digits = ordered.get(i).getValue();
         		FW.write(digits + "\n");
