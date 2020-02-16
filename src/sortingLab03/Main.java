@@ -25,6 +25,7 @@ public class Main {
 		Sorting MS = new MergeSorting();
 		Sorting RS = new RadixSorting();
 		Sorting QS = new QuickSorting();
+		Test T = new Test();
 		Random RM = new Random();
 
 		//Estimate the amount of total numbers

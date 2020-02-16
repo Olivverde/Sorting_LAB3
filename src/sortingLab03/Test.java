@@ -7,40 +7,178 @@ import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 
+import org.junit.Test;
+
 /**
  * @author olivverde
  *
  */
 public class Test {
 
+	@Test
 	public void merge(){
 		MergeSorting merge = new MergeSorting();
-		ArrayList<Comparable> dato = new ArrayList<Comparable>();
-		ArrayList<Comparable> dados = new ArrayList<Comparable>();
-		ArrayList<Comparable> esperados = new ArrayList<Comparable>();
+		ArrayList<Comparable> data = new ArrayList<Comparable>();
+		ArrayList<Comparable> given = new ArrayList<Comparable>();
+		ArrayList<Comparable> expected = new ArrayList<Comparable>();
 		
-		ArrayList<String> orden = new ArrayList<String>();
-		ArrayList<String> pronto = new ArrayList<String>();
+		ArrayList<String> order = new ArrayList<String>();
+		ArrayList<String> soon = new ArrayList<String>();
 
 		//Datos que son dados
-		dato.add(new Comparable(6));
-		dato.add(new Comparable(2));
-		dato.add(new Comparable(4));
-		dato.add(new Comparable(9));
-		dato.add(new Comparable(1));
+		data.add(new Comparable(6));
+		data.add(new Comparable(2));
+		data.add(new Comparable(4));
+		data.add(new Comparable(9));
+		data.add(new Comparable(1));
 
 		//Datos que se esperan
-		esperados.add(new Comparable(1));
-		esperados.add(new Comparable(2));
-		esperados.add(new Comparable(4));
-		esperados.add(new Comparable(6));
-		esperados.add(new Comparable(9));
+		expected.add(new Comparable(1));
+		expected.add(new Comparable(2));
+		expected.add(new Comparable(4));
+		expected.add(new Comparable(6));
+		expected.add(new Comparable(9));
 		
-		dados = merge.sorting(dato, 5);
+		given = merge.sorting(data, 5);
 		
-		for(int i=0; i<dato.size(); i++) {
-			orden.add(dados.get(i).toString());
-			pronto.add(esperados.get(i).toString());
-		} assertEquals(pronto, orden);
+		for(int i=0; i<data.size(); i++) {
+			order.add(given.get(i).toString());
+			soon.add(expected.get(i).toString());
+		} assertEquals(soon, order);
 	} 
+
+	@Test
+	public void quick(){
+		QuickSorting quick = new QuickSorting();
+		ArrayList<Comparable> data = new ArrayList<Comparable>();
+		ArrayList<Comparable> given = new ArrayList<Comparable>();
+		ArrayList<Comparable> expected = new ArrayList<Comparable>();
+		
+		ArrayList<String> order = new ArrayList<String>();
+		ArrayList<String> soon = new ArrayList<String>();
+
+		//Datos que son dados
+		data.add(new Comparable(6));
+		data.add(new Comparable(2));
+		data.add(new Comparable(4));
+		data.add(new Comparable(9));
+		data.add(new Comparable(1));
+
+		//Datos que se esperan
+		expected.add(new Comparable(1));
+		expected.add(new Comparable(2));
+		expected.add(new Comparable(4));
+		expected.add(new Comparable(6));
+		expected.add(new Comparable(9));
+		
+		given = quick.sorting(data, 5);
+		
+		for(int i=0; i<data.size(); i++) {
+			order.add(given.get(i).toString());
+			soon.add(expected.get(i).toString());
+		} assertEquals(soon, order);
+	} 
+
+
+
+
+	@Test
+	public void insertion(){
+		InsertionSorting insertion = new InsertionSorting();
+		ArrayList<Comparable> data = new ArrayList<Comparable>();
+		ArrayList<Comparable> given = new ArrayList<Comparable>();
+		ArrayList<Comparable> expected = new ArrayList<Comparable>();
+		
+		ArrayList<String> order = new ArrayList<String>();
+		ArrayList<String> soon = new ArrayList<String>();
+
+		//Datos que son dados
+		data.add(new Comparable(6));
+		data.add(new Comparable(2));
+		data.add(new Comparable(4));
+		data.add(new Comparable(9));
+		data.add(new Comparable(1));
+
+		//Datos que se esperan
+		expected.add(new Comparable(1));
+		expected.add(new Comparable(2));
+		expected.add(new Comparable(4));
+		expected.add(new Comparable(6));
+		expected.add(new Comparable(9));
+		
+		given = insertion.sorting(data, 5);
+		
+		for(int i=0; i<data.size(); i++) {
+			order.add(given.get(i).toString());
+			soon.add(expected.get(i).toString());
+		} assertEquals(soon, order);
+	} 
+
+
+	@Test
+	public void radix(){
+		RadixSorting radix = new RadixSorting();
+		ArrayList<Comparable> data = new ArrayList<Comparable>();
+		ArrayList<Comparable> given = new ArrayList<Comparable>();
+		ArrayList<Comparable> expected = new ArrayList<Comparable>();
+		
+		ArrayList<String> order = new ArrayList<String>();
+		ArrayList<String> soon = new ArrayList<String>();
+
+		//Datos que son dados
+		data.add(new Comparable(6));
+		data.add(new Comparable(2));
+		data.add(new Comparable(4));
+		data.add(new Comparable(9));
+		data.add(new Comparable(1));
+
+		//Datos que se esperan
+		expected.add(new Comparable(1));
+		expected.add(new Comparable(2));
+		expected.add(new Comparable(4));
+		expected.add(new Comparable(6));
+		expected.add(new Comparable(9));
+		
+		given = radix.sorting(data, 5);
+		
+		for(int i=0; i<data.size(); i++) {
+			order.add(given.get(i).toString());
+			soon.add(expected.get(i).toString());
+		} assertEquals(soon, order);
+	} 
+
+
+	@Test
+	public void selection(){
+		SelectionSorting selec = new SelectionSorting();
+		ArrayList<Comparable> data = new ArrayList<Comparable>();
+		ArrayList<Comparable> given = new ArrayList<Comparable>();
+		ArrayList<Comparable> expected = new ArrayList<Comparable>();
+		
+		ArrayList<String> order = new ArrayList<String>();
+		ArrayList<String> soon = new ArrayList<String>();
+
+		//Datos que son dados
+		data.add(new Comparable(6));
+		data.add(new Comparable(2));
+		data.add(new Comparable(4));
+		data.add(new Comparable(9));
+		data.add(new Comparable(1));
+
+		//Datos que se esperan
+		expected.add(new Comparable(1));
+		expected.add(new Comparable(2));
+		expected.add(new Comparable(4));
+		expected.add(new Comparable(6));
+		expected.add(new Comparable(9));
+		
+		given = selec.sorting(data, 5);
+		
+		for(int i=0; i<data.size(); i++) {
+			order.add(given.get(i).toString());
+			soon.add(expected.get(i).toString());
+		} assertEquals(soon, order);
+	} 
+
+
 }
