@@ -6,4 +6,5 @@
  *
  */
 module sortingLab03 {
+	requires junit;
 }

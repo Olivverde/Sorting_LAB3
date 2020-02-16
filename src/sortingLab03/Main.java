@@ -28,7 +28,7 @@ public class Main {
 		Random RM = new Random();
 
 		//Estimate the amount of total numbers
-		int amount = RM.nextInt(3000)+10;
+		int amount = 1000;
 		
 		//Create the arrays that are going to hold the unsorted digits
 		ArrayList<Comparable> ordered = new ArrayList<Comparable>();
@@ -52,7 +52,7 @@ public class Main {
         }
 		//Execute the sorting method
 		//Change the prefix (SS, IS, etc) in order to execute the sort you deserve
-		ordered = QS.sorting(data, amount);
+		ordered = SS.sorting(data, amount);
 		
 
 		//Get and save the numbers (sorted)
