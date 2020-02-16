@@ -1,13 +1,16 @@
 /**
+ * @author olivverde
+ * @since 09/02/2020
+ * @version 15/02/2020
  * 
+ * Facility: UVG
+ * Class: Algoritmos y estructura de datos
  */
 package sortingLab03;
 
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
-
-import org.junit.Test;
 
 /**
  * @author olivverde
